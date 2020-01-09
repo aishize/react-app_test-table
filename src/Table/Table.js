@@ -22,7 +22,7 @@ export default props => (
      </tr>
     </thead>
    <tbody>
-     {(props.data == undefined )? <th>{'Not Found'}</th> : props.data.map(item => (
+     {(props.data === undefined )? <tr><td>{'Not Found'}</td></tr> : props.data.map(item => (
        <tr key={item.id + item.phone} onClick={props.onRowSelect.bind(null,item)}>
         <td>{item.id}</td>
         <td>{item.firstName}</td>
