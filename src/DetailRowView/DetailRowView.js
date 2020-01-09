@@ -5,7 +5,7 @@ export default ({person}) => (
   <p>Выбран пользователь </p> <b>{person.firstName + ' '+ person.lastName}</b>
   <p>
      Описание: <br />
-  <textarea defaultValue = {person.description} />
+  <textarea cols="35" rows="7" defaultValue = {person.description} />
   </p>
   <p>Адрес проживания: <b>{person.address.streetAddress}</b></p>
   <p>Город: <b>{person.address.city}</b></p>
